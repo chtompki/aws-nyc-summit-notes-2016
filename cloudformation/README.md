@@ -4,7 +4,7 @@ Advanced Infrastructure as Code: Building Modular, Dynamic AWS CloudFormation St
 ### Agenda
 * Cloudformation fundamentals
 * Advanced best practices
-* Other shit.
+* Other shit. People walking past my chair in this slide...damn it.
 
 ### Best Practices
 * Naming conventions
@@ -30,5 +30,13 @@ We want to generate our json, we don't want to write it. We've seen a bunch of d
 1. [Troposphere](https://github.com/cloudtools/troposphere)
     * This thing is way way way better.
 1. [SparkleFormation](http://www.sparkleformation.io)
+    * This is written in ruby...feels yucky, maybe I should get over that.
+    * This looks nice from a command line perspective, after seeing it in progress.
+1. *"Beyond"* (Terraform)
 
-    
+This is all important because you can get way more dynamic than just a dataformat language, JSON.
+
+### Summary
+* Build tempates, not snowflakes...integral part of the design.
+* Create central management and governance
+* Investigate new, more flexible abstraction layers to manage multiple templates.
