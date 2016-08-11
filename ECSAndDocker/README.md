@@ -1,6 +1,16 @@
 Continuous Integration with Amazon ECS and Docker
 =================================================
 
+## Table of Contents
+
+* [Okta Connect Everything\.](#okta-connect-everything)
+* [Problem Statememt\.](#problem-statememt)
+* [Vision](#vision)
+* [Docker](#docker)
+* [Host management](#host-management)
+  
+-------------------------------------------------------
+
 ### Okta Connect Everything.
 They "connect people" There are a ton of folks that use their service. Ok...this is boring and silly. Let's get to the details. Ok, so they have 200 engineers. 1 week sprints. Every merge to master is a potential release candidates.
 
@@ -42,3 +52,10 @@ Userdata installs:
 
 __*IAM separation per "task definition."*__ I'm not sure what this neans, but it sounds interesting. Task definition can list several containers (i.e. you can do a small constellation of containers in the task definitions). __*Need to find his code here*__
 
+### Problems with ECS and Docker
+
+* Docker containers not launching
+* ECS agent not launching
+* Other junk
+* Load balancer isn't as good in the ELB land.
+* Different endpoint for adding things in the cluster.
