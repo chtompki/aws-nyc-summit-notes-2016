@@ -8,6 +8,7 @@ Continuous Integration with Amazon ECS and Docker
 * [Vision](#vision)
 * [Docker](#docker)
 * [Host management](#host-management)
+* [Problems with ECS and Docker](#problems-with-ecs-and-docker)
   
 -------------------------------------------------------
 
@@ -59,3 +60,5 @@ __*IAM separation per "task definition."*__ I'm not sure what this neans, but it
 * Other junk
 * Load balancer isn't as good in the ELB land.
 * Different endpoint for adding things in the cluster.
+* Canary deployments. This is difficult in ECS. Hm...that is curious. Rollback is fairly easy.
+* They don't want to run stateful services in Docker.
