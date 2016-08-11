@@ -1,6 +1,14 @@
 Advanced Infrastructure as Code: Building Modular, Dynamic AWS CloudFormation Stacks
 ====================================================================================
 
+## Table of Contents
+* [Agenda](#agenda)
+* [Best Practices](#best-practices)
+* [Frameworks](#frameworks)
+* [Summary](#summary)
+
+-----------------------------------
+
 ### Agenda
 * Cloudformation fundamentals
 * Advanced best practices
