@@ -19,3 +19,26 @@ Opensource monolithic applications. We can replace git poller and Gearman with S
 ### Docker
 
 He introduces what docker is ... ok ... nothing spectactular.
+
+Importants:
+
+* Only use docker containers from the internal repository
+* *jFrog Xray for container*
+* *cAdvisor from google*
+* Never bake secrets into the images. (KMS??)
+* Never use "latest" artifacts 
+* Write all logs to standard out, and then let the host manage the logging.
+* [ECS Under the Hood](http://www.allthingsdistributed.com/2015/07/under-the-hood-of-the-amazon-ec2-container-service.html)
+
+### Host management
+Userdata installs:
+
+* Slave terminator
+* Base docker images an option
+* credentials from S3
+* splunk forwarder
+* cluster target
+* cache code and libs. (this is important if we're just going to share a volume).
+
+__*IAM separation per "task definition."*__ I'm not sure what this neans, but it sounds interesting. Task definition can list several containers (i.e. you can do a small constellation of containers in the task definitions). __*Need to find his code here*__
+
